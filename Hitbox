@@ -25,6 +25,7 @@ Toggle.Active = true Toggle.Draggable = true Toggle.MouseButton1Click:connect(fu
 Library:ToggleUI() 
 end) 
 local HomeTab = Window:Tab("Home","rbxassetid://10888331510")
+HomeTab:Section("Settings") 
 HomeTab:TextBox("Hitbox Size (TextBox)", function(value) getgenv().HitboxSize = value end) 
 HomeTab:TextBox("Hitbox Transparency", function(number) getgenv().HitboxTransparency = number end) 
 HomeTab:Section("Main") 
